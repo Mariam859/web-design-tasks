@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.text_center {
+    text-align: center;
+}
+
+.custom-div {
+    display: inline-block;
+    color: aqua;
+    width: 30%;
+    border: 3px solid black;
+    vertical-align: middle;
+    padding: 1%;
+}
+
+.margin-left-right {
+    margin: 0% 5%;
+}
+
+.custom-div p {
+    font-size: 25px; 
+    font-family: sans-serif;
+    text-transform: capitalize;
+    text-align: justify;
+    color: black;
+}
+
+.custom-div a {
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    width: 51%;
+    margin: 10% auto;
+    display: inline-block;
+    padding: 5%;
+    text-align: center;
+}
+
+    

@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #8e44ad;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.padding-top-bottom {
+    padding: 4% 0%;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid transparent;
+    font-size: 0;
+}
+
+.contact-info {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    background-color: #1abc9c;
+    color: white;
+    padding: 5%;
+    font-size: 16px;
+}
+
+.contact-info h1 {
+    font-size: 35px;
+    margin-bottom: 3%;
+}
+
+.contact-info p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 2%;
+}
+
+.contact-form-wrapper {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    padding: 5%;
+    background-color: #ffffff;
+    font-size: 16px;
+}
+
+.contact-form-wrapper h3 {
+    font-size: 28px;
+    margin-bottom: 3%;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 3%;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 1%;
+    font-size: 14px;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 2% 3%;
+    border: none;
+    background-color: #e8e8e8;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: inherit;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    background-color: #ddd;
+    box-shadow: 0 0 5px #1abc9c;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 3%;
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #16a085;
+}

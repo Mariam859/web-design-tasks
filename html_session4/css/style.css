@@ -1,0 +1,482 @@
+/* ================= RESET STYLES ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ================= UTILITY CLASSES ================= */
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.padding-top-bottom {
+    padding: 5% 0%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.title-font {
+    font-size: 32px;
+    font-weight: 400;
+    color: black;
+}
+
+
+.text-light {
+    color: #868686;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.text-light-white {
+    color: white;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.bg-light {
+    background-color: white;
+}
+
+.bg-dark {
+    background-color: #000000;
+}
+
+.text-white {
+    color: white;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+/* ================= HR LINES ================= */
+.hr-style {
+    width: 70px;
+    margin: 1.5% auto;
+}
+
+.hr-left {
+    width: 70px;
+    margin: 3% 0;
+}
+
+.hr-orange {
+    border: 1px solid orange;
+}
+
+.hr-white {
+    border: 1px solid white;
+}
+
+/* ================= BUTTONS ================= */
+.btn-orange {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.btn-block {
+    width: 100%;
+}
+
+.btn-transparent {
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    padding: 10px 25px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 3%;
+}
+
+/* ================= NAVBAR ================= */
+nav {
+    padding: 1.2% 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+nav .logo a {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+nav .logo span {
+    color: #ff8b38;
+}
+
+nav .nav-links li {
+    float: left;
+    margin-left: 25px;
+}
+
+nav .nav-links li a {
+    font-size: 14px;
+    color: #cccccc;
+}
+
+/* ================= HERO SECTION ================= */
+.hero-section {
+    background-image: url('https://imgs.search.brave.com/aFS-o_O-pKqefH8HgmhL006Qhb6kWTuFv0uC6tzxCFI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/Y3JlYXRlLnZpc3Rh/LmNvbS9hcGkvbWVk/aWEvc21hbGwvMzE5/NjQzMi9zdG9jay1w/aG90by1tb2Rlcm4t/YnVpbGRpbmc'); /* حطي هنا صورة المباني اللي في الخلفية */
+    background-size: cover;
+    background-position: center;
+    margin-top: 50px;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+.hero-content {
+    width: 55%;
+    margin-top: 3%;
+}
+
+.hero-content .logo-text {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.hero-content .logo-text span {
+    color: #ff8b38;
+}
+
+.hero-content h2 {
+    font-size: 22px;
+    font-weight: 300;
+    margin-top: 2%;
+}
+
+.hero-form {
+    width: 35%;
+    background-color: #ffffff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.hero-form .form-header {
+    background-color: #f5f5f5;
+    padding: 5% 0;
+    color: #333333;
+}
+
+.hero-form .form-header span {
+    color: #ff8b38;
+}
+
+.hero-form .form-body {
+    padding: 8%;
+}
+
+.hero-form .form-body input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 8%;
+    border: none;
+    border-bottom: 1px solid #d6d6d6;
+    outline: none;
+}
+
+/* ================= SOCIAL BAR ================= */
+.social-bar {
+    padding: 2% 0;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.social-text {
+    width: 40%;
+}
+
+.social-text h4 {
+    font-size: 18px;
+    color: #333333;
+}
+
+.social-icons a {
+    color: #cccccc;
+    font-size: 22px;
+    margin-left: 20px;
+}
+
+/* ================= TABS SECTION ================= */
+.tabs-section .tab-buttons {
+    width: 15%;
+}
+
+.tabs-section .tab-btn {
+    display: block;
+    width: 90px;
+    height: 90px;
+    background-color: #333333;
+    color: #ffffff;
+    border: none;
+    font-weight: 700;
+    margin-bottom: 1px;
+    cursor: pointer;
+}
+
+.tabs-section .tab-btn.active {
+    background-color: #ff8b38;
+}
+
+.tabs-section .tab-content {
+    width: 50%;
+    padding: 0 3%;
+}
+
+.tabs-section .tab-content h3 {
+    font-size: 20px;
+    margin-bottom: 3%;
+    color: #333333;
+}
+
+.tabs-section .tab-content p {
+    margin-bottom: 3%;
+}
+
+.tabs-section .tab-image {
+    width: 30%;
+}
+
+.tabs-section .tab-image img {
+    max-width: 100%;
+}
+
+/* ================= SUBLIST SECTION ================= */
+.sublist-image {
+    width: 45%;
+}
+
+.sublist-image img {
+    width: 100%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.sublist-content {
+    width: 48%;
+}
+
+.sublist-content h3 {
+    font-size: 22px;
+    color: #333333;
+}
+
+.icon-item {
+    margin-top: 5%;
+}
+
+.icon-item .icon-box {
+    width: 12%;
+}
+
+.icon-item .icon-box i {
+    font-size: 20px;
+    color: #ff8b38;
+    border: 2px solid #ff8b38;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.icon-item .icon-text {
+    width: 85%;
+}
+
+.icon-item .icon-text h4 {
+    color: #333333;
+    margin-bottom: 1%;
+}
+
+/* ================= CARDS SYSTEM (WHY THIS IS AWESOME & REVIEWS) ================= */
+.card {
+    width: 30%;
+}
+
+.card-margin {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.icon-circle {
+    color: #ff8b38;
+    font-size: 32px;
+    border: 2px solid #ff8b38;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    line-height: 65px;
+    margin-bottom: 5%;
+    display: inline-block;
+}
+
+.card h3 {
+    font-size: 18px;
+    color: #333333;
+    margin-bottom: 3%;
+}
+
+/* ================= PRICING SECTION ================= */
+.price-box {
+    width: 30%;
+    background-color: #ffffff;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.price-margin {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.price-header {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 8% 0;
+    border-bottom: 5px solid #ff8b38;
+    position: relative;
+}
+
+.price-header h3 {
+    font-size: 18px;
+}
+
+.price-amount {
+    font-size: 42px;
+    font-weight: 700;
+    margin: 3% 0;
+}
+
+.price-period {
+    font-size: 12px;
+    color: #aaaaaa;
+    font-style: italic;
+}
+
+.active-price .ribbon {
+    background-color: #ff8b38;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 5px 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.price-body li {
+    padding: 4% 0;
+    border-bottom: 1px solid #eeeeee;
+    color: #868686;
+    font-size: 13px;
+}
+
+/* ================= REVIEWS SECTION ================= */
+.review-bubble {
+    background-color: #f5f5f5;
+    padding: 8%;
+    border-radius: 5px;
+    margin-bottom: 8%;
+}
+
+.author-box img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+}
+
+.author-info {
+    text-align: left;
+    margin-top: 10px;
+}
+
+.author-info h4 {
+    color: #333333;
+    font-size: 16px;
+}
+
+/* ================= BANNER BOTTOM ================= */
+.banner-bottom {
+    background-image: url('https://imgs.search.brave.com/UqXgfhXXlQAJseL4YaWO9r1tIferCQCR3tfOexanqvE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMucGV4ZWxzLmNv/bS9waG90b3MvMTM0/MzcxMzIvcGV4ZWxz/LXBob3RvLTEzNDM3/MTMyLmpwZWc_Y3M9/dGlueXNyZ2ImZHBy/PTEmdz01MDA'); 
+    background-size: cover;
+}
+
+/* ================= CONTACT FORM ================= */
+.contact-form {
+    margin-top: 3%;
+}
+
+.form-left {
+    width: 48%;
+}
+
+.form-right {
+    width: 48%;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 6%;
+    border: none;
+    border-bottom: 1px solid #d6d6d6;
+    outline: none;
+}
+
+.contact-form button {
+    margin-top: 2%;
+}
+
+/* ================= FOOTER ================= */
+footer {
+    padding: 2% 0;
+}
+
+.footer-icons {
+    margin-bottom: 1%;
+}
+
+.footer-icons a {
+    color: #ffffff;
+    margin: 0 10px;
+    font-size: 18px;
+}

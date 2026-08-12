@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: gray;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* container */
+.team-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    padding: 50px 0;
+}
+
+/*card container */
+.team-card {
+    position: relative;
+    width: 240px;
+    height: 240px;
+    cursor: pointer;
+}
+
+/* image */
+.card-img {
+    position: relative;
+    width: 240px;
+    height: 240px;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+.card-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 240px;
+    height: 240px;
+    background-color: #ffffff;
+    z-index: 1;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.35s ease;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 12px;
+}
+
+.card-info {
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+}
+
+.card-info h4 {
+    font-size: 15px;
+    color: #222222;
+    font-weight: 700;
+}
+
+.card-info p {
+    font-size: 12px;
+    color: #777777;
+    margin-top: 2px;
+}
+
+/* hover */
+.team-card:hover .card-bg {
+    top: 35px;
+    left: 40px;
+    height: 275px; 
+}
+
+.team-card:hover .card-info {
+    opacity: 1;
+}

@@ -1,0 +1,695 @@
+/* RESET & BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    background-color: white;
+    color: darkslategray;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 85%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.btn-yellow {
+    background-color: gold;
+    color: darkslategray;
+    padding: 14px 30px;
+    font-size: 13px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-yellow:hover {
+    background-color: orange;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+/* NAVBAR */
+.header {
+    padding: 30px 0;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1000;
+}
+
+.nav-container {
+    width: 85%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.logo {
+    float: left;
+    font-size: 24px;
+    font-weight: 800;
+    color: darkslategray;
+}
+
+.nav-links {
+    float: left;
+    margin-left: 60px;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav-links a {
+    font-size: 13px;
+    font-weight: 600;
+    color: gray;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: darkslategray;
+}
+
+.nav-auth {
+    float: right;
+}
+
+.link-join {
+    font-size: 13px;
+    font-weight: 600;
+    color: gray;
+    margin-right: 25px;
+}
+
+.nav-container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* HERO SECTION */
+.hero {
+    padding-bottom: 80px;
+    overflow: hidden;
+}
+
+.hero-bg-box {
+    width: 85%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.hero-content {
+    width: 45%;
+    float: left;
+    padding-top: 40px;
+}
+
+.hero-content h1 {
+    font-size: 52px;
+    font-weight: 800;
+    line-height: 1.15;
+    margin-bottom: 40px;
+    color: darkslategray;
+}
+
+.hero-search {
+    background: white;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.06);
+    width: 125%;
+    position: relative;
+    z-index: 10;
+}
+
+.hero-search input {
+    border: none;
+    outline: none;
+    padding: 20px;
+    width: 70%;
+    font-size: 13px;
+    float: left;
+}
+
+.hero-search button {
+    width: 30%;
+    float: left;
+}
+
+.hero-search::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.hero-image {
+    width: 55%;
+    float: right;
+    position: relative;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-badge {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: gold;
+    padding: 18px 25px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.hero-badge span {
+    margin-left: 15px;
+}
+
+.hero-bg-box::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* STATISTICS SECTION */
+.stats-section {
+    padding: 90px 0;
+}
+
+.stats-text {
+    width: 45%;
+    float: left;
+}
+
+.stats-text h2 {
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 25px;
+    color: darkslategray;
+}
+
+.stats-text p {
+    font-size: 12px;
+    color: gray;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.stats-grid {
+    width: 50%;
+    float: right;
+}
+
+.stat-card {
+    width: 48%;
+    float: left;
+    background-color: whitesmoke;
+    padding: 40px 30px;
+    text-align: center;
+    margin-bottom: 4%;
+    margin-right: 4%;
+}
+
+.stat-card:nth-child(2n) {
+    margin-right: 0;
+}
+
+.stat-card h3 {
+    font-size: 40px;
+    font-weight: 800;
+    color: gold;
+    margin-bottom: 5px;
+}
+
+.stat-card p {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.stats-section::after, .stats-grid::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* APARTMENTS SECTION */
+.apartments-section {
+    background-color: whitesmoke;
+    padding: 90px 0;
+}
+
+.apartments-grid {
+    margin-bottom: 40px;
+}
+
+.apt-card {
+    width: 31.33%;
+    float: left;
+    margin-right: 3%;
+    margin-bottom: 30px;
+    background: white;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.apt-card:nth-child(3n) {
+    margin-right: 0;
+}
+
+.apt-card:hover {
+    transform: translateY(-5px);
+}
+
+/* APARTMENTS OVERLAY */
+.apt-img-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.apt-img-wrapper img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.apt-card:hover .apt-img-wrapper img {
+    transform: scale(1.05);
+}
+
+.apt-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+}
+
+.apt-overlay span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: gold;
+    color: darkslategray;
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 3px;
+}
+
+.apt-card:hover .apt-overlay {
+    opacity: 1;
+}
+
+.apt-info {
+    padding: 20px;
+}
+
+.apt-info h4 {
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: darkslategray;
+}
+
+.apt-details .price {
+    font-size: 16px;
+    font-weight: 800;
+    color: gold;
+    float: left;
+}
+
+.apt-details .specs {
+    font-size: 11px;
+    color: gray;
+    font-weight: 600;
+    float: right;
+}
+
+.apt-details .specs span {
+    margin-left: 10px;
+}
+
+.apt-details::after, .apartments-grid::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.apt-bottom-controls {
+    margin-top: 20px;
+}
+
+.search-box-bottom {
+    float: left;
+    width: 400px;
+    background: white;
+}
+
+.search-box-bottom input {
+    border: none;
+    outline: none;
+    padding: 15px 20px;
+    width: 70%;
+    float: left;
+}
+
+.search-box-bottom button {
+    width: 30%;
+    float: left;
+}
+
+.btn-white {
+    float: left;
+    margin-left: 20px;
+    background-color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    color: darkslategray;
+}
+
+.search-box-bottom::after, .apt-bottom-controls::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* HOW IT WORKS SECTION */
+.how-it-works {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.section-header h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: darkslategray;
+    margin-bottom: 15px;
+}
+
+.section-header p {
+    color: gray;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 50px;
+}
+
+.cards-grid {
+    margin-top: 30px;
+}
+
+.work-card {
+    width: 31.33%;
+    float: left;
+    margin-right: 3%;
+    background: white;
+    padding: 40px 30px 35px 30px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    border-radius: 4px;
+}
+
+.work-card:last-child {
+    margin-right: 0;
+}
+
+.bg-number {
+    position: absolute;
+    top: -30px;
+    left: 20px;
+    font-size: 140px;
+    font-weight: 900;
+    color: whitesmoke;
+    z-index: 1;
+    user-select: none;
+    line-height: 1;
+}
+
+.card-content {
+    position: relative;
+    z-index: 2;
+}
+
+.card-content h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: darkslategray;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.card-content p {
+    font-size: 13px;
+    color: gray;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.card-link {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    color: darkslategray;
+    position: relative;
+    padding-bottom: 3px;
+}
+
+.card-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: gold;
+}
+
+.cards-grid::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* ADVERTS SECTION */
+.adverts-section {
+    padding: 90px 0;
+    background-color: white;
+}
+
+.advert-item {
+    margin-bottom: 110px;
+}
+
+.advert-item:last-child {
+    margin-bottom: 0;
+}
+
+.advert-img {
+    width: 48%;
+    float: left;
+    position: relative;
+}
+
+.advert-img img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    display: block;
+}
+
+.advert-badge {
+    position: absolute;
+    bottom: -25px;
+    right: 20px;
+    background-color: gold;
+    color: darkslategray;
+    padding: 22px 40px;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.advert-text {
+    width: 48%;
+    float: right;
+    padding-top: 20px;
+}
+
+.advert-item.reverse .advert-img {
+    float: right;
+}
+
+.advert-item.reverse .advert-text {
+    float: left;
+}
+
+.advert-text h2 {
+    font-size: 32px;
+    font-weight: 800;
+    color: darkslategray;
+    margin-bottom: 20px;
+}
+
+.advert-text p {
+    font-size: 13px;
+    color: gray;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.btn-dark {
+    background-color: darkslategray;
+    color: white;
+    border: none;
+    padding: 16px 36px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.advert-item::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* FOOTER */
+.footer {
+    background-color: darkslategray;
+    color: white;
+    padding: 80px 0 40px;
+}
+
+.footer-top {
+    padding-bottom: 60px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    margin-bottom: 60px;
+}
+
+.footer-brand {
+    float: left;
+}
+
+.logo-light {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.footer-top h2 {
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.footer-newsletter {
+    float: right;
+    background: white;
+    width: 400px;
+    margin-top: 15px;
+}
+
+.footer-newsletter input {
+    border: none;
+    outline: none;
+    padding: 18px 20px;
+    width: 80%;
+    float: left;
+}
+
+.footer-newsletter button {
+    background: white;
+    border: none;
+    padding: 18px 0;
+    width: 20%;
+    float: left;
+    cursor: pointer;
+    color: darkslategray;
+}
+
+.footer-top::after, .footer-newsletter::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer-links .col-brand {
+    width: 30%;
+    float: left;
+}
+
+.col-brand p {
+    font-size: 11px;
+    color: gray;
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+.footer-logo {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.footer-links .col {
+    width: 17.5%;
+    float: left;
+}
+
+.col h5 {
+    font-size: 11px;
+    color: gray;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.col a {
+    display: block;
+    font-size: 12px;
+    color: white;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.footer-links::after {
+    content: "";
+    display: table;
+    clear: both;
+}

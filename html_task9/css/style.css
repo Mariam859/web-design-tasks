@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+.padding-top-bottom {
+    padding: 4% 0%;
+}
+
+.car-track {
+    width: 100%;
+    height: 180px;
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+}
+
+.car-img {
+    width: 220px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    
+    /* Animation */
+    animation-name: Car;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes Car {
+    0% {
+        left: 0%;
+    }
+    100% {
+        left: calc(100% - 220px);
+    }
+}
